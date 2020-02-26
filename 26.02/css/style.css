@@ -1,0 +1,58 @@
+img{
+    max-width: 100%;
+}
+.cabin{
+    position: relative;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26,188,156,.9);
+    width: 350px;
+    height: 253px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+}
+
+.overlay i{
+    font-size: 70px;
+    color: white;
+}
+
+.cabin:hover .overlay{
+
+    transition: .4s all;
+    opacity: 1;
+}
+.headicon{
+    position: relative;
+    display: inline-block;
+}
+.headicon i{
+    font-size: 35px;
+}
+
+.headicon::before{
+    content: "";
+    width: 80px;
+    height: 1px;
+    border: 1.5px solid black;
+    position: absolute;
+    left: -215%;
+    top: 43%;
+}
+.headicon::after{
+    content: "";
+    width: 80px;
+    height: 1px;
+    border: 1.5px solid black;
+    position: absolute;
+    right: -215%;
+    top: 43%;
+}
